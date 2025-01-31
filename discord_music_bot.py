@@ -110,5 +110,6 @@ async def s(ctx):
     else:
         await ctx.send("현재 재생 중인 노래가 없습니다!")
 
-TOKEN = 'MTMzNDg2OTI0Njk1NzU4NDQyNg.GOA2bw.qvt-EF03D0T8IJGb4hyy_tQ7A9vuVNz4I2sq9U'
-bot.run(TOKEN)
+
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
